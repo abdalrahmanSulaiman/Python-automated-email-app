@@ -1,4 +1,4 @@
-#api key = bdb7b0a9c1d04865bce5f5f903b20c87
+#api key = enter api key
 import requests
 from pprint import pprint
 import yagmail
@@ -38,7 +38,7 @@ class NewsFeed:
                    f"&from={self.from_date}" + \
                    f"&to={self.to_date}" + \
                    f"&language={self.language}" + \
-                   f"&apiKey=bdb7b0a9c1d04865bce5f5f903b20c87"
+                   f"&apiKey=" //type api key
         return full_url
 
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
         body = f"Hello {row['name']} welcome to your daily news" \
                f"{news.get()}"
 
-        email = yagmail.SMTP(user="pythontest321456@gmail.com", password="iqgk hixs ugao uqwx")
+        email = yagmail.SMTP(user="@gmail.com", password="iqgk hixs ugao uqwx") // enter email
         email.send(
             to=receiver,
             subject="Yagmail test with attachment",
