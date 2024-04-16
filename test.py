@@ -10,7 +10,7 @@ import time
 
 def send_email():
     news = NewsFeed(interest=row['interest'], language='en', from_date=yesterdays_date, to_date=todays_date)
-    email = yagmail.SMTP(user="pythontest321456@gmail.com", password="iqgk hixs ugao uqwx")
+    email = yagmail.SMTP(user="@gmail.com", password="iqgk hixs ugao uqwx")
     email.send(
         to=row['email'],
         subject="Yagmail test with attachment",
